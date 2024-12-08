@@ -58,8 +58,8 @@
         <div class="container is-max-desktop">
             <div class="columns is-centered">
                 <div class="column has-text-centered">
-                    <h1 class="title is-1 publication-title">3DR-DIFF: Blind Diffusion Inpainting for 3D Point Cloud
-                        Reconstruction and Segmentation</h1>
+                    <h1 class="title is-1 publication-title">FlowCraft: Unveiling Adversarial Robustness of LiDAR Scene
+                        Flow Estimation</h1>
                     <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://yasasmahima.github.io/">K.T.Yasas Mahima</a><sup>1</sup>,</span>
@@ -99,36 +99,35 @@
                   <span>Pre-Print</span>
                 </a>
               </span>
-                            <!-- Video Link. -->
-                            <span class="link-block">
-                <a href="https://www.researchgate.net/publication/382268803_3DR-DIFF_Blind_Diffusion_Inpainting_for_3D_Point_Cloud_Reconstruction_and_Segmentation"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
+<!--                            &lt;!&ndash; Video Link. &ndash;&gt;-->
+<!--                            <span class="link-block">-->
+<!--                <a href="https://www.researchgate.net/publication/382268803_3DR-DIFF_Blind_Diffusion_Inpainting_for_3D_Point_Cloud_Reconstruction_and_Segmentation"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fab fa-youtube"></i>-->
+<!--                  </span>-->
+<!--                  <span>Video</span>-->
+<!--                </a>-->
+<!--              </span>-->
 
-                             <span class="link-block">
+                            <span class="link-block">
                 <a href="https://www.researchgate.net/publication/382268803_3DR-DIFF_Blind_Diffusion_Inpainting_for_3D_Point_Cloud_Reconstruction_and_Segmentation"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-powerpoint"></i>
                   </span>
-                  <span>Poster</span>
+                  <span>Graphical Abstract</span>
                 </a>
               </span>
-                            <!-- Code Link. -->
-<!--                            <span class="link-block">-->
-<!--                <a href=""-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="fab fa-github"></i>-->
-<!--                  </span>-->
-<!--                  <span>Code</span>-->
-<!--                  </a>-->
-<!--              </span>-->
+                            <span class="link-block">
+                                            <a href=""
+                                               class="external-link button is-normal is-rounded is-dark">
+                                              <span class="icon">
+                                                  <i class="fab fa-github"></i>
+                                              </span>
+                                              <span>Code</span>
+                                              </a>
+                                          </span>
 
 
                         </div>
@@ -143,8 +142,8 @@
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
-                <h2 class="title is-3">3DR DIFF Architecture</h2>
-                <img src="static/images/3DR-DIFF.png" alt="MY ALT TEXT"/>
+                <!--                <h2 class="title is-3">3DR DIFF Architecture</h2>-->
+                <img width="150%" src="static/images/Flow_craft.png" alt="MY ALT TEXT"/>
             </div>
         </div>
     </div>
@@ -160,28 +159,21 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        LiDAR-based 3D perception is a focal point in
-                        autonomous vehicle research due to its efficacy in real-world
-                        environments and falling costs. However, recent research reveals
-                        challenges with LiDAR sensing under corruptions that occur
-                        due to adverse weather conditions and sensor-level errors,
-                        known as common corruptions. In particular, the majority of
-                        these corruptions lead to sparsity or noise in LiDAR point
-                        clouds, degrading the performance of downstream perception
-                        tasks. To address this, we propose a blind inpainting method
-                        named 3DR-DIFF, utilizing diffusion networks to reconstruct
-                        and segment corrupted point clouds. 3DR-DIFF comprises two
-                        key components: a corrupted region prediction network, acting
-                        as a binary mask predictor, and a conditional diffusion network.
-                        The evaluation results demonstrate that the 3DR-DIFF is able
-                        to reconstruct the LiDAR samples with a depth error of less
-                        than 0.56 mean absolute error (MAE) and an intensity error of
-                        0.02 MAE, along with an average segmentation performance of
-                        0.43 mean intersection over union. Furthermore, benchmarking
-                        results highlight that 3DR-DIFF outperforms state-of-the-art
-                        methods in reconstructing LiDAR beam-missing scenarios,
-                        exhibiting an approximately 9.2% lower error for a degradation
-                        of 1 MAE
+                        With the arrival of deep learning and advanced sensor technologies, the autonomous vehicle
+                        domain has gained increased research interest. In particular deep learning networks developed
+                        based on 3D LiDAR sensing data for perception and planning in autonomous vehicles demonstrate
+                        remarkable performance. However, recent research reveals vulnerabilities in LiDAR-based
+                        perception tasks, such as 3D object detection and segmentation, to intentionally crafted
+                        adversarial perturbations. Yet, the adversarial robustness of LiDAR-based planning tasks, which
+                        incorporate temporal information like scene flow estimation, remains largely unexplored.
+                        Therefore, this study introduces a novel adversarial attack named FlowCraft, which is based on
+                        two loss functions, along with a critical analysis of selecting the adversarial objective
+                        against scene flow estimation. The experimental results on the Argoverse 2 benchmark dataset and
+                        DeFlow network show that FlowCraft increases the network's endpoint error from 0.062 to 0.245—a
+                        ratio of 2.90. FlowCraft outperforms PGD and CosPGD attacks in both attack effectiveness and
+                        imperceptibility, causing approximately 5.5 times higher endpoint error increase per unit change
+                        in chamfer distance compared to PGD. Additionally, FlowCraft is capable of altering both
+                        supervised and self-supervised scene flow estimation methods in a black-box manner.
                     </p>
                 </div>
             </div>
@@ -207,440 +199,440 @@
 <hr>
 
 
-<section class="section">
-    <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <h2 class="title is-3">3DR-DIFF Reconstruction</h2>
-                <div class="content">
-                    <h2 class="title is-5">Ground Truth</h2>
-                    <img width="50%" src="./static/images/fog-lidar-h-seg_khSPli7e.gif">
-                    <img src="./static/images/snow_depth_h_new.gif">
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <div class="content">
-                    <h3 class="title is-5">Cross Sensor</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="columns is-centered">
-            <!-- Visual Effects. -->
-            <div class="column">
-                <div class="content">
-                    <h3 class="title is-6">Corrupted</h3>
-                    <img width="80%" src="./static/images/cs-lidar-c-seg_Qm0qI0mj.gif">
-                    <img src="./static/images/cs_depth_c_new.gif">
-                </div>
-            </div>
-
-            <!--/ Visual Effects. -->
-
-            <!-- Matting. -->
-            <div class="column">
-                <!--                <h2 class="title is-3">Matting</h2>-->
-                <div class="columns is-centered">
-                    <div class="column content">
-                        <h3 class="title is-6">Generated</h3>
-                        <img width="80%" src="./static/images/cs-lidar-s-seg_5fLgGqLJ.gif">
-                        <img src="./static/images/cs_depth_s_new.gif">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <div class="content">
-                    <h3 class="title is-5">Wet Ground</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="columns is-centered">
-            <!-- Visual Effects. -->
-            <div class="column">
-                <div class="content">
-                    <h3 class="title is-6">Corrupted</h3>
-                    <img width="80%" src="./static/images/wg-lidar-c-seg_nYh6mKdU.gif">
-                    <img src="./static/images/wg_depth_c_new.gif">
-                </div>
-            </div>
-
-            <!--/ Visual Effects. -->
-
-            <!-- Matting. -->
-            <div class="column">
-                <!--                <h2 class="title is-3">Matting</h2>-->
-                <div class="columns is-centered">
-                    <div class="column content">
-                        <h3 class="title is-6">Generated</h3>
-                        <img width="80%" src="./static/images/wg-lidar-s-seg_zeqJFHKw.gif">
-                        <img src="./static/images/wg_depth_s_new.gif">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <div class="content">
-                    <h3 class="title is-5">Beam Missing</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="columns is-centered">
-            <!-- Visual Effects. -->
-            <div class="column">
-                <div class="content">
-                    <h3 class="title is-6">Corrupted</h3>
-                    <img width="80%" src="./static/images/bm-lidar-c-seg_hqZJZNhp.gif">
-                    <img src="./static/images/bm_depth_c_new.gif">
-                </div>
-            </div>
-
-            <!--/ Visual Effects. -->
-
-            <!-- Matting. -->
-            <div class="column">
-                <!--                <h2 class="title is-3">Matting</h2>-->
-                <div class="columns is-centered">
-                    <div class="column content">
-                        <h3 class="title is-6">Generated</h3>
-                        <img width="80%" src="./static/images/bm-lidar-s-seg_zgXubpET.gif">
-                        <img src="./static/images/bm_depth_s_new.gif">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <div class="content">
-                    <h3 class="title is-5">Incomplete Echo</h3>
-                    <p>Note: This corruption removes points on vehicle objects.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="columns is-centered">
-            <!-- Visual Effects. -->
-            <div class="column">
-                <div class="content">
-                    <h3 class="title is-6">Corrupted</h3>
-                    <img width="80%" src="./static/images/ic-lidar-c-seg_xnuS4fJ3.gif">
-                    <img src="./static/images/ie_depth_c_new.gif">
-                </div>
-            </div>
-
-            <!--/ Visual Effects. -->
-
-            <!-- Matting. -->
-            <div class="column">
-                <!--                <h2 class="title is-3">Matting</h2>-->
-                <div class="columns is-centered">
-                    <div class="column content">
-                        <h3 class="title is-6">Generated</h3>
-                        <img width="80%" src="./static/images/ic-lidar-s-seg_n5Njje4O.gif">
-                        <img src="./static/images/ie_depth_s_new.gif">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <div class="content">
-                    <h3 class="title is-5">Fog</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="columns is-centered">
-            <!-- Visual Effects. -->
-            <div class="column">
-                <div class="content">
-                    <h3 class="title is-6">Corrupted</h3>
-                    <img width="80%" src="./static/images/fog-lidar-c-seg_veZitO6J.gif">
-                    <img src="./static/images/fog_depth_c_new.gif">
-                </div>
-            </div>
-
-            <!--/ Visual Effects. -->
-
-            <!-- Matting. -->
-            <div class="column">
-                <!--                <h2 class="title is-3">Matting</h2>-->
-                <div class="columns is-centered">
-                    <div class="column content">
-                        <h3 class="title is-6">Generated</h3>
-                        <img width="80%" src="./static/images/fog-lidar-s-seg_nD9HxcL9.gif">
-                        <img src="./static/images/fog_depth_s_new.gif">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <div class="content">
-                    <h3 class="title is-5">Snow</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="columns is-centered">
-            <!-- Visual Effects. -->
-            <div class="column">
-                <div class="content">
-                    <h3 class="title is-6">Corrupted</h3>
-                    <img width="80%" src="./static/images/snow-lidar-c-seg_Gp6cl2TO.gif">
-                    <img src="./static/images/snow_depth_c_new.gif">
-                </div>
-            </div>
-
-            <!--/ Visual Effects. -->
-
-            <!-- Matting. -->
-            <div class="column">
-                <!--                <h2 class="title is-3">Matting</h2>-->
-                <div class="columns is-centered">
-                    <div class="column content">
-                        <h3 class="title is-6">Generated</h3>
-                        <img width="80%" src="./static/images/snow-lidar-s-seg_z6LGqfcx.gif">
-                        <img src="./static/images/snow_depth_s.gif">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <hr>
-        <hr>
-
-        <div class="container is-max-desktop">
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                    <h2 class="title is-3">3DR-DIFF Segmentation (PS-3DR-DIFF)</h2>
-                </div>
-            </div>
-
-            <div class="columns is-centered">
-                <!-- Visual Effects. -->
-                <div class="column">
-                    <div class="content">
-                        <h2 class="title is-5">Cross Sensor</h2>
-                        <img src="./static/images/cross_sensor_seg.gif">
-                    </div>
-                </div>
-
-                <div class="column">
-                    <!--                <h2 class="title is-3">Matting</h2>-->
-                    <div class="columns is-centered">
-                        <div class="column content">
-                            <h2 class="title is-5">Wet Ground</h2>
-                            <img src="./static/images/wet_ground_seg.gif">
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--/ Visual Effects. -->
-
-                <!-- Matting. -->
-            </div>
-            <hr>
-            <div class="container is-max-desktop">
-
-                <div class="columns is-centered">
-                    <!-- Visual Effects. -->
-                    <div class="column">
-                        <div class="content">
-                            <h2 class="title is-5">Beam Missing</h2>
-                            <img src="./static/images/beam_missing_seg.gif">
-                        </div>
-                    </div>
-
-                    <!--/ Visual Effects. -->
-
-                    <!-- Matting. -->
-                    <div class="column">
-                        <!--                <h2 class="title is-3">Matting</h2>-->
-                        <div class="columns is-centered">
-                            <div class="column content">
-                                <h2 class="title is-5">Incomplete Echo</h2>
-                                <img src="./static/images/incomplete_echo_seg.gif">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="container is-max-desktop">
-
-                    <div class="columns is-centered">
-                        <!-- Visual Effects. -->
-                        <div class="column">
-                            <div class="content">
-                                <h2 class="title is-5">Fog</h2>
-                                <img src="./static/images/fog_seg.gif">
-                            </div>
-                        </div>
-
-                        <div class="column">
-                            <!--                <h2 class="title is-3">Matting</h2>-->
-                            <div class="columns is-centered">
-                                <div class="column content">
-                                    <h2 class="title is-5">Snow</h2>
-                                    <img src="./static/images/snow_seg.gif">
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!--/ Visual Effects. -->
-
-                        <!-- Matting. -->
-
-                    </div>
-
-                    <hr>
-                    <hr>
-                    <!--/ Matting. -->
-
-                    <!-- Animation. -->
-                    <!--                <div class="columns is-centered">-->
-                    <!--                    <div class="column is-full-width">-->
-                    <!--                        <h2 class="title is-3">Animation</h2>-->
-
-                    <!--                        &lt;!&ndash; Interpolating. &ndash;&gt;-->
-                    <!--                        <h3 class="title is-4">Interpolating states</h3>-->
-                    <!--                        <div class="content has-text-justified">-->
-                    <!--                            <p>-->
-                    <!--                                We can also animate the scene by interpolating the deformation latent codes of two input-->
-                    <!--                                frames. Use the slider here to linearly interpolate between the left frame and the right-->
-                    <!--                                frame.-->
-                    <!--                            </p>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="columns is-vcentered interpolation-panel">-->
-                    <!--                            <div class="column is-3 has-text-centered">-->
-                    <!--                                <img src="./static/images/interpolate_start.jpg"-->
-                    <!--                                     class="interpolation-image"-->
-                    <!--                                     alt="Interpolate start reference image."/>-->
-                    <!--                                <p>Start Frame</p>-->
-                    <!--                            </div>-->
-                    <!--                            <div class="column interpolation-video-column">-->
-                    <!--                                <div id="interpolation-image-wrapper">-->
-                    <!--                                    Loading...-->
-                    <!--                                </div>-->
-                    <!--                                <input class="slider is-fullwidth is-large is-info"-->
-                    <!--                                       id="interpolation-slider"-->
-                    <!--                                       step="1" min="0" max="100" value="0" type="range">-->
-                    <!--                            </div>-->
-                    <!--                            <div class="column is-3 has-text-centered">-->
-                    <!--                                <img src="./static/images/interpolate_end.jpg"-->
-                    <!--                                     class="interpolation-image"-->
-                    <!--                                     alt="Interpolation end reference image."/>-->
-                    <!--                                <p class="is-bold">End Frame</p>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                        <br/>-->
-                    <!--                        &lt;!&ndash;/ Interpolating. &ndash;&gt;-->
-
-                    <!--                        &lt;!&ndash; Re-rendering. &ndash;&gt;-->
-                    <!--                        <h3 class="title is-4">Re-rendering the input video</h3>-->
-                    <!--                        <div class="content has-text-justified">-->
-                    <!--                            <p>-->
-                    <!--                                Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel-->
-                    <!--                                viewpoint such as a stabilized camera by playing back the training deformations.-->
-                    <!--                            </p>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="content has-text-centered">-->
-                    <!--                            <video id="replay-video"-->
-                    <!--                                   controls-->
-                    <!--                                   muted-->
-                    <!--                                   preload-->
-                    <!--                                   playsinline-->
-                    <!--                                   width="75%">-->
-                    <!--                                <source src="./static/videos/replay.mp4"-->
-                    <!--                                        type="video/mp4">-->
-                    <!--                            </video>-->
-                    <!--                        </div>-->
-                    <!--                        &lt;!&ndash;/ Re-rendering. &ndash;&gt;-->
-
-                    <!--                    </div>-->
-                    <!--                </div>-->
-                    <!--                &lt;!&ndash;/ Animation. &ndash;&gt;-->
-
-
-                    <!--                &lt;!&ndash; Concurrent Work. &ndash;&gt;-->
-                    <!--                <div class="columns is-centered">-->
-                    <!--                    <div class="column is-full-width">-->
-                    <!--                        <h2 class="title is-3">Related Links</h2>-->
-
-                    <!--                        <div class="content has-text-justified">-->
-                    <!--                            <p>-->
-                    <!--                                There's a lot of excellent work that was introduced around the same time as ours.-->
-                    <!--                            </p>-->
-                    <!--                            <p>-->
-                    <!--                                <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural-->
-                    <!--                                    Optimization</a>-->
-                    <!--                                introduces an idea similar to our windowed position encoding for coarse-to-fine-->
-                    <!--                                optimization.-->
-                    <!--                            </p>-->
-                    <!--                            <p>-->
-                    <!--                                <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a-->
-                    <!--                                    href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>-->
-                    <!--                                both use deformation fields to model non-rigid scenes.-->
-                    <!--                            </p>-->
-                    <!--                            <p>-->
-                    <!--                                Some works model videos with a NeRF by directly modulating the density, such as <a-->
-                    <!--                                    href="https://video-nerf.github.io/">Video-NeRF</a>, <a-->
-                    <!--                                    href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a-->
-                    <!--                                    href="https://neural-3d-video.github.io/">DyNeRF</a>-->
-                    <!--                            </p>-->
-                    <!--                            <p>-->
-                    <!--                                There are probably many more by the time you are reading this. Check out <a-->
-                    <!--                                    href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF-->
-                    <!--                                papers</a>,-->
-                    <!--                                and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of-->
-                    <!--                                NeRF-->
-                    <!--                                papers</a>.-->
-                    <!--                            </p>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                </div>
-                <!--/ Concurrent Work. -->
-
-            </div>
-</section>
+<!--<section class="section">-->
+<!--    <div class="container is-max-desktop">-->
+<!--        <div class="columns is-centered has-text-centered">-->
+<!--            <div class="column is-four-fifths">-->
+<!--                <h2 class="title is-3">3DR-DIFF Reconstruction</h2>-->
+<!--                <div class="content">-->
+<!--                    <h2 class="title is-5">Ground Truth</h2>-->
+<!--                    <img width="50%" src="./static/images/fog-lidar-h-seg_khSPli7e.gif">-->
+<!--                    <img src="./static/images/snow_depth_h_new.gif">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr>-->
+
+<!--        <div class="columns is-centered has-text-centered">-->
+<!--            <div class="column is-four-fifths">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-5">Cross Sensor</h3>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="columns is-centered">-->
+<!--            &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-6">Corrupted</h3>-->
+<!--                    <img width="80%" src="./static/images/cs-lidar-c-seg_Qm0qI0mj.gif">-->
+<!--                    <img src="./static/images/cs_depth_c_new.gif">-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
+
+<!--            &lt;!&ndash; Matting. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                &lt;!&ndash;                <h2 class="title is-3">Matting</h2>&ndash;&gt;-->
+<!--                <div class="columns is-centered">-->
+<!--                    <div class="column content">-->
+<!--                        <h3 class="title is-6">Generated</h3>-->
+<!--                        <img width="80%" src="./static/images/cs-lidar-s-seg_5fLgGqLJ.gif">-->
+<!--                        <img src="./static/images/cs_depth_s_new.gif">-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr>-->
+
+
+<!--        <div class="columns is-centered has-text-centered">-->
+<!--            <div class="column is-four-fifths">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-5">Wet Ground</h3>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="columns is-centered">-->
+<!--            &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-6">Corrupted</h3>-->
+<!--                    <img width="80%" src="./static/images/wg-lidar-c-seg_nYh6mKdU.gif">-->
+<!--                    <img src="./static/images/wg_depth_c_new.gif">-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
+
+<!--            &lt;!&ndash; Matting. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                &lt;!&ndash;                <h2 class="title is-3">Matting</h2>&ndash;&gt;-->
+<!--                <div class="columns is-centered">-->
+<!--                    <div class="column content">-->
+<!--                        <h3 class="title is-6">Generated</h3>-->
+<!--                        <img width="80%" src="./static/images/wg-lidar-s-seg_zeqJFHKw.gif">-->
+<!--                        <img src="./static/images/wg_depth_s_new.gif">-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr>-->
+
+
+<!--        <div class="columns is-centered has-text-centered">-->
+<!--            <div class="column is-four-fifths">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-5">Beam Missing</h3>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="columns is-centered">-->
+<!--            &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-6">Corrupted</h3>-->
+<!--                    <img width="80%" src="./static/images/bm-lidar-c-seg_hqZJZNhp.gif">-->
+<!--                    <img src="./static/images/bm_depth_c_new.gif">-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
+
+<!--            &lt;!&ndash; Matting. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                &lt;!&ndash;                <h2 class="title is-3">Matting</h2>&ndash;&gt;-->
+<!--                <div class="columns is-centered">-->
+<!--                    <div class="column content">-->
+<!--                        <h3 class="title is-6">Generated</h3>-->
+<!--                        <img width="80%" src="./static/images/bm-lidar-s-seg_zgXubpET.gif">-->
+<!--                        <img src="./static/images/bm_depth_s_new.gif">-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr>-->
+
+<!--        <div class="columns is-centered has-text-centered">-->
+<!--            <div class="column is-four-fifths">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-5">Incomplete Echo</h3>-->
+<!--                    <p>Note: This corruption removes points on vehicle objects.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="columns is-centered">-->
+<!--            &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-6">Corrupted</h3>-->
+<!--                    <img width="80%" src="./static/images/ic-lidar-c-seg_xnuS4fJ3.gif">-->
+<!--                    <img src="./static/images/ie_depth_c_new.gif">-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
+
+<!--            &lt;!&ndash; Matting. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                &lt;!&ndash;                <h2 class="title is-3">Matting</h2>&ndash;&gt;-->
+<!--                <div class="columns is-centered">-->
+<!--                    <div class="column content">-->
+<!--                        <h3 class="title is-6">Generated</h3>-->
+<!--                        <img width="80%" src="./static/images/ic-lidar-s-seg_n5Njje4O.gif">-->
+<!--                        <img src="./static/images/ie_depth_s_new.gif">-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr>-->
+
+<!--        <div class="columns is-centered has-text-centered">-->
+<!--            <div class="column is-four-fifths">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-5">Fog</h3>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="columns is-centered">-->
+<!--            &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-6">Corrupted</h3>-->
+<!--                    <img width="80%" src="./static/images/fog-lidar-c-seg_veZitO6J.gif">-->
+<!--                    <img src="./static/images/fog_depth_c_new.gif">-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
+
+<!--            &lt;!&ndash; Matting. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                &lt;!&ndash;                <h2 class="title is-3">Matting</h2>&ndash;&gt;-->
+<!--                <div class="columns is-centered">-->
+<!--                    <div class="column content">-->
+<!--                        <h3 class="title is-6">Generated</h3>-->
+<!--                        <img width="80%" src="./static/images/fog-lidar-s-seg_nD9HxcL9.gif">-->
+<!--                        <img src="./static/images/fog_depth_s_new.gif">-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr>-->
+
+<!--        <div class="columns is-centered has-text-centered">-->
+<!--            <div class="column is-four-fifths">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-5">Snow</h3>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="columns is-centered">-->
+<!--            &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                <div class="content">-->
+<!--                    <h3 class="title is-6">Corrupted</h3>-->
+<!--                    <img width="80%" src="./static/images/snow-lidar-c-seg_Gp6cl2TO.gif">-->
+<!--                    <img src="./static/images/snow_depth_c_new.gif">-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
+
+<!--            &lt;!&ndash; Matting. &ndash;&gt;-->
+<!--            <div class="column">-->
+<!--                &lt;!&ndash;                <h2 class="title is-3">Matting</h2>&ndash;&gt;-->
+<!--                <div class="columns is-centered">-->
+<!--                    <div class="column content">-->
+<!--                        <h3 class="title is-6">Generated</h3>-->
+<!--                        <img width="80%" src="./static/images/snow-lidar-s-seg_z6LGqfcx.gif">-->
+<!--                        <img src="./static/images/snow_depth_s.gif">-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr>-->
+<!--        <hr>-->
+
+<!--        <div class="container is-max-desktop">-->
+<!--            <div class="columns is-centered has-text-centered">-->
+<!--                <div class="column is-four-fifths">-->
+<!--                    <h2 class="title is-3">3DR-DIFF Segmentation (PS-3DR-DIFF)</h2>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="columns is-centered">-->
+<!--                &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--                <div class="column">-->
+<!--                    <div class="content">-->
+<!--                        <h2 class="title is-5">Cross Sensor</h2>-->
+<!--                        <img src="./static/images/cross_sensor_seg.gif">-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="column">-->
+<!--                    &lt;!&ndash;                <h2 class="title is-3">Matting</h2>&ndash;&gt;-->
+<!--                    <div class="columns is-centered">-->
+<!--                        <div class="column content">-->
+<!--                            <h2 class="title is-5">Wet Ground</h2>-->
+<!--                            <img src="./static/images/wet_ground_seg.gif">-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
+
+<!--                &lt;!&ndash; Matting. &ndash;&gt;-->
+<!--            </div>-->
+<!--            <hr>-->
+<!--            <div class="container is-max-desktop">-->
+
+<!--                <div class="columns is-centered">-->
+<!--                    &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--                    <div class="column">-->
+<!--                        <div class="content">-->
+<!--                            <h2 class="title is-5">Beam Missing</h2>-->
+<!--                            <img src="./static/images/beam_missing_seg.gif">-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
+
+<!--                    &lt;!&ndash; Matting. &ndash;&gt;-->
+<!--                    <div class="column">-->
+<!--                        &lt;!&ndash;                <h2 class="title is-3">Matting</h2>&ndash;&gt;-->
+<!--                        <div class="columns is-centered">-->
+<!--                            <div class="column content">-->
+<!--                                <h2 class="title is-5">Incomplete Echo</h2>-->
+<!--                                <img src="./static/images/incomplete_echo_seg.gif">-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <hr>-->
+
+<!--                <div class="container is-max-desktop">-->
+
+<!--                    <div class="columns is-centered">-->
+<!--                        &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--                        <div class="column">-->
+<!--                            <div class="content">-->
+<!--                                <h2 class="title is-5">Fog</h2>-->
+<!--                                <img src="./static/images/fog_seg.gif">-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="column">-->
+<!--                            &lt;!&ndash;                <h2 class="title is-3">Matting</h2>&ndash;&gt;-->
+<!--                            <div class="columns is-centered">-->
+<!--                                <div class="column content">-->
+<!--                                    <h2 class="title is-5">Snow</h2>-->
+<!--                                    <img src="./static/images/snow_seg.gif">-->
+
+<!--                                </div>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
+
+<!--                        &lt;!&ndash; Matting. &ndash;&gt;-->
+
+<!--                    </div>-->
+
+<!--                    <hr>-->
+<!--                    <hr>-->
+<!--                    &lt;!&ndash;/ Matting. &ndash;&gt;-->
+
+<!--                    &lt;!&ndash; Animation. &ndash;&gt;-->
+<!--                    &lt;!&ndash;                <div class="columns is-centered">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <div class="column is-full-width">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <h2 class="title is-3">Animation</h2>&ndash;&gt;-->
+
+<!--                    &lt;!&ndash;                        &lt;!&ndash; Interpolating. &ndash;&gt;&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <h3 class="title is-4">Interpolating states</h3>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <div class="content has-text-justified">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                We can also animate the scene by interpolating the deformation latent codes of two input&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                frames. Use the slider here to linearly interpolate between the left frame and the right&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                frame.&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            </p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <div class="columns is-vcentered interpolation-panel">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <div class="column is-3 has-text-centered">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                <img src="./static/images/interpolate_start.jpg"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                     class="interpolation-image"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                     alt="Interpolate start reference image."/>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                <p>Start Frame</p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <div class="column interpolation-video-column">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                <div id="interpolation-image-wrapper">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                    Loading...&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                <input class="slider is-fullwidth is-large is-info"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                       id="interpolation-slider"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                       step="1" min="0" max="100" value="0" type="range">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <div class="column is-3 has-text-centered">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                <img src="./static/images/interpolate_end.jpg"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                     class="interpolation-image"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                     alt="Interpolation end reference image."/>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                <p class="is-bold">End Frame</p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <br/>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        &lt;!&ndash;/ Interpolating. &ndash;&gt;&ndash;&gt;-->
+
+<!--                    &lt;!&ndash;                        &lt;!&ndash; Re-rendering. &ndash;&gt;&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <h3 class="title is-4">Re-rendering the input video</h3>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <div class="content has-text-justified">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                viewpoint such as a stabilized camera by playing back the training deformations.&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            </p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <div class="content has-text-centered">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <video id="replay-video"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                   controls&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                   muted&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                   preload&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                   playsinline&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                   width="75%">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                <source src="./static/videos/replay.mp4"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                        type="video/mp4">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            </video>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        &lt;!&ndash;/ Re-rendering. &ndash;&gt;&ndash;&gt;-->
+
+<!--                    &lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                &lt;!&ndash;/ Animation. &ndash;&gt;&ndash;&gt;-->
+
+
+<!--                    &lt;!&ndash;                &lt;!&ndash; Concurrent Work. &ndash;&gt;&ndash;&gt;-->
+<!--                    &lt;!&ndash;                <div class="columns is-centered">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <div class="column is-full-width">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <h2 class="title is-3">Related Links</h2>&ndash;&gt;-->
+
+<!--                    &lt;!&ndash;                        <div class="content has-text-justified">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                There's a lot of excellent work that was introduced around the same time as ours.&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            </p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                    Optimization</a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                introduces an idea similar to our windowed position encoding for coarse-to-fine&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                optimization.&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            </p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                    href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                both use deformation fields to model non-rigid scenes.&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            </p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                Some works model videos with a NeRF by directly modulating the density, such as <a&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                    href="https://video-nerf.github.io/">Video-NeRF</a>, <a&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                    href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                    href="https://neural-3d-video.github.io/">DyNeRF</a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            </p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            <p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                There are probably many more by the time you are reading this. Check out <a&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                    href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                papers</a>,&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                NeRF&ndash;&gt;-->
+<!--                    &lt;!&ndash;                                papers</a>.&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            </p>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--                </div>-->
+<!--                &lt;!&ndash;/ Concurrent Work. &ndash;&gt;-->
+
+<!--            </div>-->
+<!--</section>-->
 
 
 <section class="section" id="BibTeX">
@@ -676,7 +668,8 @@
                         Commons Attribution-ShareAlike 4.0 International License</a>.
                     </p>
                     <p>
-                        The source code of this website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+                        The source code of this website is borrowed from <a
+                            href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
                     </p>
                 </div>
             </div>
